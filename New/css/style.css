@@ -1,0 +1,113 @@
+body {
+    background-color: #faefd7;
+    animation: fadeIn ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+div {
+    color: #36352a;
+    font-family: Arial, serif;
+    font-size: 2vh;
+}
+
+ul {
+    padding-left: 0%;
+    list-style-type: square;
+    list-style-position: inside;
+
+}
+
+.background-decoration {
+    height: 150%;
+    width: 75%;
+    position: absolute;
+    opacity: 2%;
+    top: 0%;
+    background-color: #000000;
+    z-index: -1;
+
+}
+
+.left {
+    left: 0;
+    animation: rotation 60s infinite linear;
+}
+
+.right {
+    right: 0;
+    animation: rotation 60s infinite linear;
+    animation-direction: reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+#body-container {
+    position: absolute;
+    float: right;
+    right: 0;
+    height: 100%;
+    width: 75%;
+    z-index: 1;
+}
+
+#text {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 50%;
+    width: 40%;
+    transform: translateY(-50%);
+    padding: 10%;
+}
+
+#name-container {
+    position: absolute;
+    float: left;
+    height: 100%;
+    width: 25%;
+    overflow: none;
+    z-index: 1;
+}
+
+#name {
+    position: absolute;
+    bottom: -2vh;
+    margin-left: 5vh;
+    opacity: 50%;
+    transform: rotate(-90deg);
+    transform-origin: left;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+    white-space: nowrap;
+}
+
+
+.ultra-bold {
+    font-weight: bolder;
+    font-family: Arial Black, serif;
+    font-size: 11vh;
+}
+
+.bold {
+    font-size: 4vh;
+    font-family: Arial Black, serif;
+}
